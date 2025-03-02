@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h2>Google Profile</h2>
+    <div>
+        <p><strong>Name:</strong> <span th:text="${name}">Name</span></p>
+        <p><strong>Email:</strong> <span th:text="${email}">Email</span></p>
+    </div>
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
